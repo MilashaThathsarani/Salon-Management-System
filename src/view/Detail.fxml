@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1110.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DetailController">
+   <children>
+      <TableView fx:id="tblInvoice" layoutX="36.0" layoutY="132.0" prefHeight="557.0" prefWidth="1039.0">
+        <columns>
+          <TableColumn fx:id="colServiceCode" prefWidth="148.0" text="Service Code" />
+          <TableColumn fx:id="colServiceName" prefWidth="367.0" text="Service Name" />
+            <TableColumn fx:id="colQty" prefWidth="135.0" text="Qty" />
+            <TableColumn fx:id="colCost" prefWidth="194.0" text="Cost" />
+            <TableColumn fx:id="colDueDate" prefWidth="194.0" text="Invoice Due Date" />
+        </columns>
+      </TableView>
+      <Label layoutX="36.0" layoutY="28.0" prefHeight="59.0" prefWidth="143.0" text="Invoice Id :" textFill="#9a0000">
+         <font>
+            <Font name="Bodoni MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCost" layoutX="853.0" layoutY="705.0" prefHeight="81.0" prefWidth="222.0" text="  Rs.">
+         <font>
+            <Font name="Bodoni MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblInvoiceId" layoutX="194.0" layoutY="23.0" prefHeight="70.0" prefWidth="211.0">
+         <font>
+            <Font name="Bodoni MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="687.0" layoutY="716.0" prefHeight="59.0" prefWidth="143.0" text="Total Cost :" textFill="#9a0000">
+         <font>
+            <Font name="Bodoni MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <Separator layoutX="14.0" layoutY="12.0" prefHeight="5.0" prefWidth="1082.0" style="-fx-background-color: BLACK;" />
+      <Separator layoutX="14.0" layoutY="784.0" prefHeight="5.0" prefWidth="1082.0" style="-fx-background-color: BLACK;" />
+      <Separator layoutX="11.0" layoutY="15.0" orientation="VERTICAL" prefHeight="770.0" prefWidth="0.0" style="-fx-background-color: BLACK;" />
+      <Separator layoutX="1090.0" layoutY="15.0" orientation="VERTICAL" prefHeight="770.0" prefWidth="0.0" style="-fx-background-color: BLACK;" />
+   </children>
+</AnchorPane>

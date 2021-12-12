@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="userContext" prefHeight="633.0" prefWidth="794.0" style="-fx-background-color: #dcdde1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserController">
+   <children>
+      <Separator layoutX="14.0" layoutY="12.0" prefHeight="4.0" prefWidth="762.0" style="-fx-background-color: black;" />
+      <Separator layoutX="-31.0" layoutY="619.0" prefHeight="4.0" prefWidth="808.0" style="-fx-background-color: black;" />
+      <Separator layoutX="11.0" layoutY="12.0" orientation="VERTICAL" prefHeight="609.0" prefWidth="0.0" style="-fx-background-color: black;" />
+      <Separator layoutX="773.0" layoutY="12.0" orientation="VERTICAL" prefHeight="609.0" prefWidth="0.0" style="-fx-background-color: black;" />
+      <TextField fx:id="txtUserName" layoutX="108.0" layoutY="171.0"  onKeyPressed="#userName" prefHeight="55.0" prefWidth="574.0" promptText="User Name" />
+      <TextField fx:id="txtFullName" layoutX="108.0" layoutY="262.0"  onKeyReleased="#fullName" prefHeight="55.0" prefWidth="574.0" promptText="Full Name" />
+      <TextField fx:id="txtEmail" layoutX="108.0" layoutY="353.0" prefHeight="55.0" prefWidth="574.0" promptText="E-mail" />
+      <TextField fx:id="txtPassword" layoutX="108.0" layoutY="442.0" onKeyReleased="#password" prefHeight="55.0" prefWidth="574.0" promptText="Password" />
+      <JFXButton buttonType="RAISED" layoutX="110.0" layoutY="546.0" onAction="#addOnAction" prefHeight="44.0" prefWidth="121.0" style="-fx-background-color: #16a085;" text="     Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="563.0" layoutY="546.0" onAction="#backOnAction" prefHeight="44.0" prefWidth="121.0" style="-fx-background-color: gray;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></JFXButton>
+      <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="117.0" layoutY="552.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/add-user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="125.0" layoutX="150.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/add-user.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="289.0" layoutY="65.0" prefHeight="73.0" prefWidth="216.0" text="Add User" textFill="#5c606f">
+         <font>
+            <Font name="Bodoni MT Bold" size="50.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

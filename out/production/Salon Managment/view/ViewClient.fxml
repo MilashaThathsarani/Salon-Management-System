@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="viewClientContext" prefHeight="1000.0" prefWidth="1584.0" style="-fx-background-color: #dcdde1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewClientController">
+   <children>
+      <AnchorPane prefHeight="102.0" prefWidth="1584.0" style="-fx-background-color: #57606f;">
+         <children>
+            <Label layoutX="40.0" layoutY="29.0" prefHeight="45.0" prefWidth="182.0" text="Client Details" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="1479.0" layoutY="27.0" onAction="#backOnAction" prefHeight="48.0" prefWidth="82.0" style="-fx-background-color: gray;" text="&lt;----" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="722.0" layoutY="29.0" prefHeight="45.0" prefWidth="95.0" text="Date :" textFill="#b59b9b">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="1092.0" layoutY="29.0" prefHeight="45.0" prefWidth="95.0" text="Time :" textFill="#b59b9b">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="824.0" layoutY="29.0" prefHeight="45.0" prefWidth="250.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="1197.0" layoutY="29.0" prefHeight="45.0" prefWidth="250.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <TableView fx:id="tblClient" layoutX="40.0" layoutY="270.0" prefHeight="704.0" prefWidth="1505.0">
+        <columns>
+          <TableColumn fx:id="colClientId" prefWidth="127.99996948242188" text="Client Id" />
+          <TableColumn fx:id="colClientName" prefWidth="276.9999694824219" text="Client Name" />
+            <TableColumn fx:id="colClientAddress" prefWidth="357.0" text="Client Address" />
+            <TableColumn fx:id="colClientContact" prefWidth="202.0" text="Client Contact" />
+            <TableColumn fx:id="colClientServiceType" prefWidth="219.0" text="Service Type" />
+            <TableColumn fx:id="colDate" prefWidth="159.0" text="Date" />
+            <TableColumn fx:id="colTime" prefWidth="162.0" text="Time" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtSearch" layoutX="40.0" layoutY="140.0" onAction="#searchOnAction" prefHeight="48.0" prefWidth="361.0" />
+      <ImageView fitHeight="40.0" fitWidth="50.0" layoutX="416.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-search-30.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

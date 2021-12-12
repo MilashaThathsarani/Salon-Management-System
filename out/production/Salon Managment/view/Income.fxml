@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="incomeContext" prefHeight="1000.0" prefWidth="1584.0" style="-fx-background-color: #dcdde1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IncomeController">
+   <children>
+      <AnchorPane prefHeight="102.0" prefWidth="1584.0" style="-fx-background-color: #57606f;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="1480.0" layoutY="27.0" onAction="#backOnAction" prefHeight="48.0" prefWidth="82.0" style="-fx-background-color: gray;" text="&lt;----" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="722.0" layoutY="29.0" prefHeight="45.0" prefWidth="95.0" text="Date :" textFill="#b59b9b">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="823.0" layoutY="29.0" prefHeight="45.0" prefWidth="250.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="1095.0" layoutY="29.0" prefHeight="45.0" prefWidth="95.0" text="Time :" textFill="#b59b9b">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="1198.0" layoutY="29.0" prefHeight="45.0" prefWidth="250.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="29.0" prefHeight="45.0" prefWidth="233.0" text="Income" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="56.0" layoutY="127.0" prefHeight="806.0" prefWidth="1481.0" />
+   </children>
+</AnchorPane>

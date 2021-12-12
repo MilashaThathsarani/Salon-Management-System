@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardAdminController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <left>
+            <VBox prefHeight="1000.0" prefWidth="316.0" style="-fx-background-color: GRAY;" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #57606f;">
+                     <children>
+                        <ImageView fitWidth="170.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                           </image>
+                        </ImageView>
+                        <Label layoutX="149.0" layoutY="26.0" text="Ewuni" textFill="#f2e5e5">
+                           <font>
+                              <Font name="Algerian" size="50.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="170.0" layoutY="100.0" text="Beauty" textFill="#d0c6c6">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="236.0" layoutY="136.0" text="Salon" textFill="#d0c6c6">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="200.0" fitWidth="170.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Group%202.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+                  <JFXButton buttonType="RAISED" onAction="#viewDetailOnAction" prefHeight="80.0" prefWidth="316.0" style="-fx-background-color: gray;" text="               Client Details" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/customer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" onAction="#salonItemOnAction" prefHeight="80.0" prefWidth="316.0" style="-fx-background-color: gray;" text="                  Salon Item" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                           <image>
+                              <Image url="@../assets/shopping-bag.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" onAction="#treatmentOnAction" prefHeight="80.0" prefWidth="316.0" style="-fx-background-color: gray;" text="                  Treatments" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                           <image>
+                              <Image url="@../assets/beauty-treatment.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" onAction="#rentItemOnAction" prefHeight="80.0" prefWidth="316.0" style="-fx-background-color: gray;" text="                 Rent Items" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                           <image>
+                              <Image url="@../assets/real-estate.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" onAction="#dressingEventOnAction" prefHeight="80.0" prefWidth="316.0" style="-fx-background-color: gray;" text="         Dressing Events" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                           <image>
+                              <Image url="@../assets/dress.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" onAction="#productOnAction" prefHeight="80.0" prefWidth="316.0" style="-fx-background-color: gray;" text="                     Products" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                           <image>
+                              <Image url="@../assets/new-product.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" onAction="#staffOnAction" prefHeight="80.0" prefWidth="316.0" style="-fx-background-color: gray;" text="                           Staff" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                           <image>
+                              <Image url="@../assets/employees.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" onAction="#scheduleOnAction" prefHeight="80.0" prefWidth="316.0" style="-fx-background-color: gray;" text="       Invoice Schedule" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                           <image>
+                              <Image url="@../assets/calendar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" onAction="#incomeOnAction" prefHeight="80.0" prefWidth="316.0" style="-fx-background-color: gray;" text="                      Income" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                           <image>
+                              <Image url="@../assets/business-and-finance.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" onAction="#supplierOnAction" prefHeight="80.0" prefWidth="316.0" style="-fx-background-color: gray;" text="                  Suppliers" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                           <image>
+                              <Image url="@../assets/inventory.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <center>
+            <StackPane fx:id="adminContext" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="dashboard" prefHeight="708.0" prefWidth="1312.0" style="-fx-background-color: #4b4b4b;">
+                     <children>
+                        <AnchorPane layoutX="53.0" layoutY="181.0" prefHeight="200.0" prefWidth="244.0" style="-fx-background-color: #54a0ff; -fx-background-radius: 15;">
+                           <children>
+                              <Label layoutX="81.0" layoutY="14.0" text="Clients">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblClient" alignment="CENTER" layoutX="92.0" layoutY="61.0" prefHeight="93.0" prefWidth="142.0">
+                                 <font>
+                                    <Font name="Bodoni MT Bold" size="40.0" />
+                                 </font></Label>
+                              <ImageView fitHeight="90.0" fitWidth="79.0" layoutX="14.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/customer.png" />
+                                 </image>
+                              </ImageView>
+                           </children></AnchorPane>
+                        <AnchorPane layoutX="978.0" layoutY="181.0" prefHeight="200.0" prefWidth="244.0" style="-fx-background-color: #ff6b6b; -fx-background-radius: 15;">
+                           <children>
+                              <Label layoutX="94.0" layoutY="19.0">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="63.0" layoutY="16.0" text="Rent Items">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblRentItem" alignment="CENTER" layoutX="94.0" layoutY="64.0" prefHeight="93.0" prefWidth="142.0">
+                                 <font>
+                                    <Font name="Bodoni MT Bold" size="40.0" />
+                                 </font></Label>
+                              <ImageView fitHeight="90.0" fitWidth="79.0" layoutX="14.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/real-estate.png" />
+                                 </image>
+                              </ImageView>
+                           </children></AnchorPane>
+                        <AnchorPane layoutX="358.0" layoutY="181.0" prefHeight="200.0" prefWidth="244.0" style="-fx-background-color: #f1c40f; -fx-background-radius: 15;">
+                           <children>
+                              <Label layoutX="94.0" layoutY="14.0" text="Staff">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblStaff" alignment="CENTER" layoutX="93.0" layoutY="65.0" prefHeight="93.0" prefWidth="142.0">
+                                 <font>
+                                    <Font name="Bodoni MT Bold" size="40.0" />
+                                 </font></Label>
+                              <ImageView fitHeight="90.0" fitWidth="79.0" layoutX="14.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/employees.png" />
+                                 </image>
+                              </ImageView>
+                           </children></AnchorPane>
+                        <AnchorPane layoutX="670.0" layoutY="442.0" prefHeight="200.0" prefWidth="244.0" style="-fx-background-color: #55efc4; -fx-background-radius: 15;">
+                           <children>
+                              <Label layoutX="66.0" layoutY="14.0" text="Suppliers">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblSupplier" alignment="CENTER" layoutX="93.0" layoutY="61.0" prefHeight="93.0" prefWidth="142.0">
+                                 <font>
+                                    <Font name="Bodoni MT Bold" size="40.0" />
+                                 </font></Label>
+                              <ImageView fitHeight="90.0" fitWidth="79.0" layoutX="14.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/inventory.png" />
+                                 </image>
+                              </ImageView>
+                           </children></AnchorPane>
+                        <AnchorPane layoutX="53.0" layoutY="442.0" prefHeight="200.0" prefWidth="244.0" style="-fx-background-color: #a29bfe; -fx-background-radius: 15;">
+                           <children>
+                              <Label layoutX="72.0" layoutY="14.0" text="Products">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblProducts" alignment="CENTER" layoutX="93.0" layoutY="64.0" prefHeight="93.0" prefWidth="142.0">
+                                 <font>
+                                    <Font name="Bodoni MT Bold" size="40.0" />
+                                 </font></Label>
+                              <ImageView fitHeight="90.0" fitWidth="79.0" layoutX="14.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/new-product.png" />
+                                 </image>
+                              </ImageView>
+                           </children></AnchorPane>
+                        <AnchorPane layoutX="670.0" layoutY="181.0" prefHeight="200.0" prefWidth="244.0" style="-fx-background-color: #00d2d3; -fx-background-radius: 15;">
+                           <children>
+                              <Label layoutX="57.0" layoutY="14.0" text="Treatments">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblTreatment" alignment="CENTER" layoutX="93.0" layoutY="64.0" prefHeight="93.0" prefWidth="142.0">
+                                 <font>
+                                    <Font name="Bodoni MT Bold" size="40.0" />
+                                 </font></Label>
+                              <ImageView fitHeight="90.0" fitWidth="79.0" layoutX="14.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/beauty-treatment.png" />
+                                 </image>
+                              </ImageView>
+                           </children></AnchorPane>
+                        <AnchorPane layoutX="358.0" layoutY="442.0" prefHeight="200.0" prefWidth="244.0" style="-fx-background-color: feca57; -fx-background-radius: 15;">
+                           <children>
+                              <Label layoutX="48.0" layoutY="14.0" text="Salon Items">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblSalonItems" alignment="CENTER" layoutX="88.0" layoutY="62.0" prefHeight="93.0" prefWidth="142.0">
+                                 <font>
+                                    <Font name="Bodoni MT Bold" size="40.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="90.0" fitWidth="79.0" layoutX="14.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/shopping-bag.png" />
+                                 </image>
+                              </ImageView>
+                           </children></AnchorPane>
+                        <AnchorPane layoutX="978.0" layoutY="442.0" prefHeight="200.0" prefWidth="244.0" style="-fx-background-color: #f78fb3; -fx-background-radius: 15;">
+                           <children>
+                              <Label layoutX="74.0" layoutY="14.0" text="Invoices">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblInvoice" alignment="CENTER" layoutX="88.0" layoutY="60.0" prefHeight="93.0" prefWidth="142.0">
+                                 <font>
+                                    <Font name="Bodoni MT Bold" size="40.0" />
+                                 </font></Label>
+                              <ImageView fitHeight="90.0" fitWidth="79.0" layoutX="9.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/invoice.png" />
+                                 </image>
+                              </ImageView>
+                           </children></AnchorPane>
+                        <AnchorPane layoutX="1288.0" layoutY="181.0" prefHeight="200.0" prefWidth="244.0" style="-fx-background-color: #FEA47F; -fx-background-radius: 15;">
+                           <children>
+                              <Label layoutX="57.0" layoutY="14.0">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="29.0" layoutY="14.0" text="Dressing Events">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblDressingEvent" alignment="CENTER" layoutX="88.0" layoutY="64.0" prefHeight="93.0" prefWidth="142.0">
+                                 <font>
+                                    <Font name="Bodoni MT Bold" size="40.0" />
+                                 </font></Label>
+                              <ImageView fitHeight="90.0" fitWidth="79.0" layoutX="14.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/dress.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="1288.0" layoutY="442.0" prefHeight="200.0" prefWidth="244.0" style="-fx-background-radius: 15; -fx-background-color: f8c291;">
+                           <children>
+                              <Label fx:id="lblInvoiceDetails" alignment="CENTER" layoutX="88.0" layoutY="60.0" prefHeight="93.0" prefWidth="142.0">
+                                 <font>
+                                    <Font name="Bodoni MT Bold" size="40.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="36.0" layoutY="14.0" text="Invoice Details">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="90.0" fitWidth="79.0" layoutX="14.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/income.png" />
+                                 </image>
+                              </ImageView>
+                           </children></AnchorPane>
+                        <Label layoutX="464.0" layoutY="57.0" prefHeight="47.0" prefWidth="656.0" text="Ewuni Beauty Salon Over All Process..." textFill="WHITE">
+                           <font>
+                              <Font name="Baskerville Old Face" size="40.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="53.0" layoutY="36.0" text="Admin Console" textFill="#ababab">
+                           <font>
+                              <Font name="Book Antiqua Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <JFXButton buttonType="RAISED" layoutX="1347.0" layoutY="29.0" onAction="#logOutOnAction" prefHeight="56.0" prefWidth="205.0" style="-fx-background-radius: 20; -fx-background-color: #dfe6e9;" text="Log Out">
+                           <font>
+                              <Font name="Algerian" size="25.0" />
+                           </font>
+                        </JFXButton>
+                        <AnchorPane layoutX="53.0" layoutY="715.0" prefHeight="262.0" prefWidth="563.0" style="-fx-background-radius: 15; -fx-background-color: #bdc3c7;">
+                           <children>
+                              <Label fx:id="lblTime" alignment="CENTER" layoutX="180.0" layoutY="56.0" prefHeight="82.0" prefWidth="359.0" textFill="#2d3b5d">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="50.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblDate" alignment="CENTER" layoutX="124.0" layoutY="131.0" prefHeight="81.0" prefWidth="439.0" textFill="#2d3b5d">
+                                 <font>
+                                    <Font name="Book Antiqua" size="40.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="157.0" fitWidth="200.0" layoutX="23.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/calendar.png" />
+                                 </image>
+                              </ImageView>
+                              <Separator layoutX="13.0" layoutY="14.0" prefHeight="10.0" prefWidth="537.0" />
+                              <Separator layoutX="13.0" layoutY="243.0" prefHeight="10.0" prefWidth="537.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="670.0" layoutY="712.0" prefHeight="262.0" prefWidth="483.0" style="-fx-background-color: #7f8c8d; -fx-background-radius: 15;">
+                           <children>
+                              <ImageView fitHeight="240.0" fitWidth="467.0" layoutX="38.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/grouped-bar-example-1.png" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane layoutX="239.0" layoutY="22.0" prefHeight="43.0" prefWidth="200.0" style="-fx-background-color: white;" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="1210.0" layoutY="712.0" prefHeight="262.0" prefWidth="328.0" style="-fx-background-radius: 15; -fx-background-color: #60a3bc;">
+                           <children>
+                              <ImageView fitHeight="203.0" fitWidth="283.0" layoutX="63.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/infographic_one_14_550.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="239.0" layoutY="39.0" text="Treatments">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font></Label>
+                              <Label layoutX="112.0" layoutY="236.0" text="Dressing Events">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font></Label>
+                              <Label layoutX="10.0" layoutY="131.0" text="Rent">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font></Label>
+                              <Label layoutX="15.0" layoutY="39.0" text="Salon Items">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font></Label>
+                              <Label layoutX="266.0" layoutY="141.0" text="Products">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font></Label>
+                              <Label layoutX="23.0" layoutY="152.0" text="Items">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font></Label>
+                           </children>
+                        </AnchorPane>
+                        <Separator layoutX="15.0" layoutY="14.0" prefHeight="0.0" prefWidth="1555.0" />
+                     </children>
+                  </AnchorPane>
+               </children></StackPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

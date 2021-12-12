@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scheduleContext" prefHeight="1000.0" prefWidth="1584.0" style="-fx-background-color: #dcdde1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ScheduleController">
+   <children>
+      <AnchorPane prefHeight="102.0" prefWidth="1584.0" style="-fx-background-color: #57606f;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="1481.0" layoutY="27.0" onAction="#backOnAction" prefHeight="48.0" prefWidth="82.0" style="-fx-background-color: gray;" text="&lt;----" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="723.0" layoutY="29.0" prefHeight="45.0" prefWidth="95.0" text="Date :" textFill="#b59b9b">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="824.0" layoutY="29.0" prefHeight="45.0" prefWidth="250.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="1092.0" layoutY="29.0" prefHeight="45.0" prefWidth="95.0" text="Time :" textFill="#b59b9b">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="1195.0" layoutY="29.0" prefHeight="45.0" prefWidth="250.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="29.0" prefHeight="45.0" prefWidth="233.0" text="Invoice Schedule" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <TableView fx:id="tblSchedule" layoutX="50.0" layoutY="150.0" prefHeight="828.0" prefWidth="1491.0">
+        <columns>
+          <TableColumn fx:id="colClientId" prefWidth="223.0" text="Client Id" />
+          <TableColumn fx:id="colClientName" prefWidth="463.0" text="Client Name" />
+            <TableColumn fx:id="ColInvoicceId" prefWidth="237.0" text="Invoice Id" />
+            <TableColumn fx:id="colDate" prefWidth="283.0" text="Date" />
+            <TableColumn fx:id="colTime" prefWidth="284.0" text="Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

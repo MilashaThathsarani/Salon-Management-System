@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="logInContext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="697.0" prefWidth="1114.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogInFormController">
+   <children>
+      <ImageView fitHeight="621.0" fitWidth="748.0" layoutX="354.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/70739894-beauty-and-cosmetics-background-beauty-concept-use-for-advertising-flyer-banner-leaflet-template-vec~2.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="47.0" layoutY="72.0" prefHeight="535.0" prefWidth="361.0" style="-fx-background-color: #c44569; -fx-background-radius: 10;">
+         <children>
+            <ImageView fitHeight="357.0" fitWidth="415.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Group%202.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="28.0" layoutY="323.0" prefHeight="68.0" prefWidth="188.0" text="Ewuni">
+               <font>
+                  <Font name="Algerian" size="60.0" />
+               </font>
+            </Label>
+            <Label layoutX="145.0" layoutY="403.0" text="Beauty" textFill="#ccc6c6">
+               <font>
+                  <Font name="Bernard MT Condensed" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="240.0" layoutY="403.0" text="Salon" textFill="#ccc6c6">
+               <font>
+                  <Font name="Bernard MT Condensed" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="277.0" layoutY="466.0" text="Matara" textFill="#ccc6c6">
+               <font>
+                  <Font name="Bernard MT Condensed" size="20.0" />
+               </font>
+            </Label>
+            <Separator layoutX="12.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="535.0" prefWidth="5.0" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="408.0" layoutY="87.0" prefHeight="82.0" prefWidth="610.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="63.0" layoutX="242.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/IconBros.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="txtPassword" layoutX="517.0" layoutY="278.0" prefHeight="52.0" prefWidth="324.0" promptText="Password" />
+      <TextField fx:id="txtUserName" layoutX="517.0" layoutY="196.0" onAction="#moveOnAction" prefHeight="52.0" prefWidth="324.0" promptText="User Name" />
+      <JFXButton buttonType="RAISED" layoutX="616.0" layoutY="360.0" onAction="#logInOnAction" prefHeight="38.0" prefWidth="126.0" style="-fx-background-color: black;" text="Log In" textFill="#e8e3e3">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="47.0" layoutY="625.0" onAction="#UserOnAction" prefHeight="52.0" prefWidth="288.0" style="-fx-background-color: black;" text="Create New Account" textFill="#ddd4d4">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

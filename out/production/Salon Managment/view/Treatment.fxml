@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="treatmentContext" prefHeight="1000.0" prefWidth="1584.0" style="-fx-background-color: #dcdde1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TreatmentController">
+   <children>
+      <AnchorPane prefHeight="102.0" prefWidth="1584.0" style="-fx-background-color: #57606f;">
+         <children>
+            <Label layoutX="35.0" layoutY="29.0" prefHeight="45.0" prefWidth="158.0" text="Treatments" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="1480.0" layoutY="28.0" onAction="#backOnAction" prefHeight="48.0" prefWidth="82.0" style="-fx-background-color: gray;" text="&lt;----" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="722.0" layoutY="30.0" prefHeight="45.0" prefWidth="95.0" text="Date :" textFill="#b59b9b">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="825.0" layoutY="30.0" prefHeight="45.0" prefWidth="250.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="1093.0" layoutY="29.0" prefHeight="45.0" prefWidth="95.0" text="Time :" textFill="#b59b9b">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="1198.0" layoutY="29.0" prefHeight="45.0" prefWidth="250.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lblSalonItemId" alignment="CENTER" layoutX="388.0" layoutY="29.0" prefHeight="48.0" prefWidth="187.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="268.0" layoutY="29.0" prefHeight="45.0" prefWidth="103.0" text=" Code :" textFill="#b59b9b">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <JFXTextField fx:id="txtTreatmentCode" focusColor="BLACK" labelFloat="true" layoutX="40.0" layoutY="176.0" onAction="#selectTreatmentOnAction" prefHeight="48.0" prefWidth="418.0" promptText="Treatment Code">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDescription" focusColor="BLACK" labelFloat="true" layoutX="869.0" layoutY="176.0" onAction="#moveToPrice" onKeyPressed="#DescriptionKey" prefHeight="31.0" prefWidth="603.0" promptText="Description">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPrice" focusColor="BLACK" labelFloat="true" layoutX="40.0" layoutY="275.0" onKeyReleased="#PriceKey" prefHeight="48.0" prefWidth="550.0" promptText="Price">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnTreatments" buttonType="RAISED" layoutX="810.0" layoutY="275.0" onAction="#treatmentAddOnAction" prefHeight="67.0" prefWidth="219.0" style="-fx-background-color: #16a085;" text="    Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1078.0" layoutY="275.0" onAction="#treatmentUpdateOnAction" prefHeight="67.0" prefWidth="219.0" style="-fx-background-color: #2980b9;" text="       Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1344.0" layoutY="276.0" onAction="#treatmentRemoveOnAction" prefHeight="67.0" prefWidth="219.0" style="-fx-background-color: #e74c3c;" text="       Remove" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="50.0" fitWidth="40.0" layoutX="829.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/add.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="40.0" layoutX="1100.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/browser.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="40.0" layoutX="1367.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/trash.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblTreatment" layoutX="40.0" layoutY="387.0" prefHeight="600.0" prefWidth="1505.0">
+        <columns>
+          <TableColumn fx:id="colTreatmentCode" prefWidth="208.99996948242188" text="Treatment Code" />
+          <TableColumn fx:id="colDescription" prefWidth="600.0" text="Description" />
+            <TableColumn fx:id="colPrice" prefWidth="262.0" text="Price" />
+            <TableColumn fx:id="colDate" prefWidth="216.0" text="Date" />
+            <TableColumn fx:id="colTime" prefWidth="216.0" text="Time" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtSearch" layoutX="1199.0" layoutY="116.0" onAction="#searchOnAction" prefHeight="40.0" prefWidth="303.0" />
+      <ImageView fitHeight="28.0" fitWidth="40.0" layoutX="1517.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-search-30.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="50.0" layoutX="472.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-search-30.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
