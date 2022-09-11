@@ -93,6 +93,7 @@ public class DashBoardAdminController {
         }
     }
 
+
     private void getInvoice() throws SQLException, ClassNotFoundException {
         ResultSet rst = DbConnection.getInstance().getConnection().
                 prepareStatement("SELECT COUNT(*) FROM Invoice").executeQuery();
