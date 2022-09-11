@@ -1,8 +1,8 @@
 # *Salon Management System_.* 
 
-#First Semester Final Project
+# First Semester Final Project
 
-##This application developed by java,javafx,mysql and mvc architecture.....
+## This application developed by java,javafx,mysql and mvc architecture.....
 
 ![image of ss](src/assets/images/Screenshot%20(204).png)
 
